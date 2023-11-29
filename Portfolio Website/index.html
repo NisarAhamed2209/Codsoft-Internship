@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, section, footer {
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-decoration-color: #060505;
+            text-align: center;
+            background-color: #3498db;
+            color: #060505;
+        }
+
+      
+        nav {
+            background-color: #2ecc71;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        h1, h2, h3 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            background-color: #9f9f9f;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            margin-right: 20px;
+            border: 2px solid #2c3e50;
+    padding: 10px;
+    width: 30%;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .resume-download {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+        }
+        #name{
+            color: black;
+            font-weight: bold;
+        }
+         #role{
+            color: #060505;
+         }
+
+         #submitBtn{
+            background-color: #24a0ed;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 10rem;
+  display: block;
+    margin: 0 auto;
+         }
+
+         .HeadProject{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+         }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#header">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="header">
+        <h1 id="name">HI, I am Nisar</h1>
+        <p id="role">Web Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my portfolio! I am a passionate web developer,I am enthusiastic about gaining hands-on experience
+            and contributing to innovative engineering projects.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Beginner</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="HeadProject">
+        <div class="project">
+            <h3>Project 1-OmniFood</h3>
+            <p>A Web page which has a landing page related to food </p>
+            <p> Tech Stack Used: HTML, CSS</p>
+        </div>
+
+        <div class="project">
+            <h3>Project 2- Calculator</h3>
+            <p> A simple Calculator for Addition, subtraction, multiplication, division</p>
+            <p> Tech Stack Used: JavaScript, HTML, CSS</p>
+        </div>
+
+        <div class="project">
+            <h3>Project 3- Portfolio</h3>
+            <p> A simple Portfolio page</p>
+            <p> Tech Stack Used: HTML, CSS</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my Resume here</p>
+        <a href="./Nisar CV.pdf" class="resume-download" download>Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" id="submitBtn">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Your Name | <a href="#" target="_blank">LinkedIn</a> | <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </footer>
+
+</body>
+</html>
